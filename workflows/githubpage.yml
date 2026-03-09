@@ -1,16 +1,15 @@
-name: Deploy Company Profile to Pages
+name: Deploy Company Profile with Cache
 
 on:
   push:
     branches: ["main"]
-
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
-  
+
 concurrency:
   group: "pages"
   cancel-in-progress: false
@@ -24,6 +23,19 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
+      # Implementation of GitHub Actions Cache
+      - name: Cache Website Assets
+        uses: actions/cache@v4
+        with:
+          # Path to the directory you want to cache
+          path: |
+            .github/workflows
+            assets
+          # Key is generated based on the OS and the hash of your HTML file
+          key: ${{ runner.os }}-site-${{ hashFiles('index.html') }}
+          restore-keys: |
+            ${{ runner.os }}-site-
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

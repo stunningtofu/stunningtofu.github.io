@@ -305,33 +305,34 @@
                 </table>
             </div>
         </div>
-    </section>
+    </section>    <section id="contact" class="bg-dark-blue text-white py-5">
+        <div class="container text-center py-lg-5">
+            <h2 class="fw-bold mb-2">Ready to Optimize?</h2>
+            <p class="mb-5 opacity-75 mx-auto" style="max-width: 500px;">Book a consultation to build your future-proof roadmap.</p>
 
-    <section id="contact" class="bg-dark-blue text-white">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">Ready to Optimize?</h2>
-            <p class="mb-5 opacity-75">Book a consultation to build your future-proof roadmap.</p>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center text-start">
                 <div class="col-12 col-md-8 col-lg-5">
-                    <form action="https://formspree.io/f/johanputrarahmadan@gmail.com" method="POST" class="text-start bg-white p-4 p-md-5 rounded-4 text-dark shadow-lg">
-                        <div class="mb-3">
-                            <label for="work_email" class="form-label fw-bold small">WORK EMAIL</label>
-                            <input type="email" id="work_email" name="email" class="form-control form-control-lg" placeholder="name@company.com" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="service_select" class="form-label fw-bold small">SERVICE</label>
-                            <select id="service_select" name="service" class="form-select form-select-lg">
-                                <option>AWS Cloud Migration</option>
-                                <option>Kubernetes Orchestration</option>
-                                <option>DevOps & Automation</option>
-                            </select>
-                        </div>
-                        <div class="mb-4">
-                            <label for="project_brief" class="form-label fw-bold small">MESSAGE</label>
-                            <textarea id="project_brief" name="message" class="form-control form-control-lg" rows="4" placeholder="Briefly describe your goals..." required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 fw-bold py-3 btn-lg">Submit Request</button>
-                    </form>
+                    <div class="card-form text-dark">
+                        <form action="https://formspree.io/f/johanputrarahmadan@gmail.com" method="POST">
+                            <div class="mb-4">
+                                <label for="work_email" class="form-label">Work Email</label>
+                                <input type="email" id="work_email" name="email" class="form-control" placeholder="name@company.com" required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="service_select" class="form-label">Service</label>
+                                <select id="service_select" name="service" class="form-select">
+                                    <option>AWS Cloud Migration</option>
+                                    <option>Kubernetes Orchestration</option>
+                                    <option>DevOps & Automation</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label for="project_brief" class="form-label">Message</label>
+                                <textarea id="project_brief" name="message" class="form-control" rows="5" placeholder="Briefly describe your goals..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit w-100 text-white fw-bold">Submit Request</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>

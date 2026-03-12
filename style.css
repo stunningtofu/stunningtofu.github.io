@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Importing Google Font Inter for a clean, technical typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    @apply bg-light-gray text-dark-slate antialiased selection:bg-deep-blue selection:text-white;
+}
+
+/* Custom scrollbar for a refined UI */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    @apply bg-light-gray;
+}
+::-webkit-scrollbar-thumb {
+    @apply bg-muted-gray rounded-full;
+}

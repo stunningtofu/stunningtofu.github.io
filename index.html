@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CloudArch Solutions provides expert AWS Managed Services, Kubernetes orchestration, and DevOps automation to scale your enterprise with 99.9% uptime.">
-    <meta name="keywords" content="AWS Managed Services, Kubernetes EKS, DevOps Automation, Terraform, Cloud Migration, Enterprise Cloud Solutions">
+    <meta name="description"
+        content="CloudArch Solutions provides expert AWS Managed Services, Kubernetes orchestration, and DevOps automation to scale your enterprise with 99.9% uptime.">
+    <meta name="keywords"
+        content="AWS Managed Services, Kubernetes EKS, DevOps Automation, Terraform, Cloud Migration, Enterprise Cloud Solutions">
     <meta name="author" content="CloudArch Solutions">
     <meta name="google-site-verification" content="Krwu3D_cFsTC-iuJFQki0YBXV0qfUiYTNTHjSfENHKE" />
-    
+
     <title>CloudArch Solutions | Enterprise AWS & Kubernetes Managed Services</title>
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -24,50 +27,101 @@
             --accent-blue: #00b4d8;
         }
 
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Inter', sans-serif; color: #333; line-height: 1.6; overflow-x: hidden; }
-        
-        .bg-dark-blue { background-color: var(--dark-navy); }
-        .text-primary-custom { color: var(--accent-blue); }
-        
-        /* Responsive Hero */
-        .hero-section { 
-            padding: 100px 0; 
-            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--ocean-blue) 100%); 
-            color: white; 
+        html {
+            scroll-behavior: smooth;
         }
-        @media (min-width: 992px) { .hero-section { padding: 160px 0; } }
 
-        h1.display-3 { font-size: calc(1.8rem + 2vw); }
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .bg-dark-blue {
+            background-color: var(--dark-navy);
+        }
+
+        .text-primary-custom {
+            color: var(--accent-blue);
+        }
+
+        /* Responsive Hero */
+        .hero-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, var(--dark-navy) 0%, var(--ocean-blue) 100%);
+            color: white;
+        }
+
+        @media (min-width: 992px) {
+            .hero-section {
+                padding: 160px 0;
+            }
+        }
+
+        h1.display-3 {
+            font-size: calc(1.8rem + 2vw);
+        }
+
+        /* Hero Buttons */
+        .hero-section .d-flex {
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        @media (min-width: 769px) {
+            .hero-section .d-flex {
+                flex-direction: row;
+            }
+
+            .hero-section .btn-lg {
+                min-width: 220px;
+                text-align: center;
+            }
+        }
+
+        .hero-section .btn-lg {
+            width: auto;
+            min-width: 220px;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            flex: 0 1 auto;
+        }
 
         /* Efficient Service Cards */
-        .card-service { 
-            border: 1px solid rgba(0, 0, 0, 0.05); 
+        .card-service {
+            border: 1px solid rgba(0, 0, 0, 0.05);
             background: #ffffff;
             border-radius: 20px;
             padding: 2.5rem !important;
-            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1); 
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
             position: relative;
             overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
         }
 
         .card-service::before {
             content: "";
             position: absolute;
-            top: 0; left: 0; width: 100%; height: 4px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
             background: var(--accent-blue);
             transform: scaleX(0);
             transition: transform 0.4s ease;
             transform-origin: left;
         }
 
-        .card-service:hover { 
-            transform: translateY(-10px); 
-            box-shadow: 0 20px 40px rgba(0,180,216,0.15); 
+        .card-service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 180, 216, 0.15);
         }
 
-        .card-service:hover::before { transform: scaleX(1); }
+        .card-service:hover::before {
+            transform: scaleX(1);
+        }
 
         .service-icon-container {
             width: 65px;
@@ -81,8 +135,13 @@
             transition: all 0.3s ease;
         }
 
-        .card-service:hover .service-icon-container { background: var(--accent-blue); }
-        .card-service:hover .service-icon-container i { color: white !important; }
+        .card-service:hover .service-icon-container {
+            background: var(--accent-blue);
+        }
+
+        .card-service:hover .service-icon-container i {
+            color: white !important;
+        }
 
         .learn-more-link {
             font-size: 0.8rem;
@@ -97,37 +156,83 @@
         }
 
         /* Tech Badges */
-        .tech-badge { 
-            background: rgba(255, 255, 255, 0.1); 
-            padding: 8px 16px; 
-            border-radius: 50px; 
-            font-size: 0.8rem; 
-            font-weight: 600; 
-            margin: 4px; 
-            display: inline-block; 
+        .tech-badge {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin: 4px;
+            display: inline-block;
             color: var(--accent-blue);
             border: 1px solid rgba(0, 180, 216, 0.3);
         }
 
         /* Section Spacing */
-        section { padding: 60px 0; }
-        @media (min-width: 992px) { section { padding: 100px 0; } }
-
-        .section-title { position: relative; padding-bottom: 20px; margin-bottom: 40px; }
-        .section-title::after { 
-            content: ''; 
-            position: absolute; 
-            left: 50%; bottom: 0; transform: translateX(-50%); 
-            width: 50px; height: 4px; background: var(--accent-blue);
+        section {
+            padding: 60px 0;
         }
 
-        /* Mobile Adjustments */
-        @media (max-width: 768px) {
-            .btn-lg { width: 100%; margin-bottom: 10px; }
-            .d-flex.justify-content-center { flex-direction: column; }
+        @media (min-width: 992px) {
+            section {
+                padding: 100px 0;
+            }
+        }
+
+        .section-title {
+            position: relative;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 4px;
+            background: var(--accent-blue);
+        }
+
+        /* Contact Form (Refined) */
+        #contact .card-form {
+            background: #ffffff;
+            border-radius: 12px;
+            padding: 2.5rem !important;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        #contact .form-label {
+            font-size: 0.7rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            color: #475569;
+            text-transform: uppercase;
+            margin-bottom: 0.6rem;
+        }
+
+        #contact .form-control,
+        #contact .form-select {
+            font-size: 0.9rem;
+            padding: 0.75rem 1rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            background-color: #f8fafc;
+        }
+
+        #contact .btn-submit {
+            background-color: #0d6efd !important;
+            border: none;
+            padding: 0.8rem;
+            font-weight: 600;
+            border-radius: 8px;
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark-blue sticky-top border-bottom border-secondary">
@@ -155,12 +260,17 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10">
-                    <h1 class="display-3 fw-bold mb-4">Scale Your Infrastructure with <span class="text-primary-custom">Cloud Precision</span></h1>
+                    <h1 class="display-3 fw-bold mb-4">Scale Your Infrastructure with <span
+                            class="text-primary-custom">Cloud Precision</span></h1>
                     <p class="lead mb-5 opacity-75 mx-auto px-lg-5">
-                        Architecting resilient, high-availability environments using AWS, Docker, and Kubernetes. 
+                        Architecting resilient, high-availability environments using AWS, Docker, and Kubernetes.
                         Eliminate downtime with expert DevOps automation.
                     </p>
-                    <div class="d-flex justify-content-center gap-3">
+                    <!-- <div class="d-flex justify-content-center gap-3">
+                        <a href="#services" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Explore Services</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">Contact Us</a>
+                    </div> -->
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
                         <a href="#services" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Explore Services</a>
                         <a href="#contact" class="btn btn-outline-light btn-lg px-5 py-3 fw-bold">Contact Us</a>
                     </div>
@@ -182,48 +292,62 @@
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-box-seam fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">Container Orchestration</h5>
-                        <p class="text-muted small mb-0">Deployment and scaling via <strong>Docker</strong> and <strong>Kubernetes (EKS)</strong>. Resilient microservices with automated self-healing.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Deployment and scaling via <strong>Docker</strong> and
+                            <strong>Kubernetes (EKS)</strong>. Resilient microservices with automated self-healing.
+                        </p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-code-slash fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">Infrastructure as Code</h5>
-                        <p class="text-muted small mb-0">Automate environments with <strong>Terraform & Ansible</strong>. Reproducible deployments across any cloud provider.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Automate environments with <strong>Terraform &
+                                Ansible</strong>. Reproducible deployments across any cloud provider.</p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-graph-up-arrow fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">Observability & Logging</h5>
-                        <p class="text-muted small mb-0">Real-time monitoring using <strong>Prometheus & Grafana</strong>. Centralized logging for proactive anomaly detection.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Real-time monitoring using <strong>Prometheus &
+                                Grafana</strong>. Centralized logging for proactive anomaly detection.</p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-shield-check fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">Cloud Security</h5>
-                        <p class="text-muted small mb-0">Hardening AWS environments with IAM best practices, VPC security groups, and automated compliance auditing.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Hardening AWS environments with IAM best practices, VPC
+                            security groups, and automated compliance auditing.</p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-wordpress fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">High-Traffic Solutions</h5>
-                        <p class="text-muted small mb-0">Enterprise-grade WordPress and App setup featuring <strong>Redis caching</strong> and global load balancing.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Enterprise-grade WordPress and App setup featuring
+                            <strong>Redis caching</strong> and global load balancing.
+                        </p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="card card-service h-100 border-0">
                         <div class="service-icon-container"><i class="bi bi-cloud-haze2 fs-2 text-primary"></i></div>
                         <h5 class="fw-bold">AWS Ecosystem</h5>
-                        <p class="text-muted small mb-0">Expert management of Transit Gateways and VPC Peering for secure, high-speed private cloud connectivity.</p>
-                        <a href="#contact" class="learn-more-link">Explore Details <i class="bi bi-arrow-right ms-2"></i></a>
+                        <p class="text-muted small mb-0">Expert management of Transit Gateways and VPC Peering for
+                            secure, high-speed private cloud connectivity.</p>
+                        <a href="#contact" class="learn-more-link">Explore Details <i
+                                class="bi bi-arrow-right ms-2"></i></a>
                     </div>
                 </div>
             </div>
@@ -235,7 +359,8 @@
             <div class="row align-items-center g-5">
                 <div class="col-lg-6">
                     <h2 class="fw-bold mb-4">Why Partner With CloudArch?</h2>
-                    <p class="mb-4">We architect high-performance cloud environments that align with your business growth and industry best practices.</p>
+                    <p class="mb-4">We architect high-performance cloud environments that align with your business
+                        growth and industry best practices.</p>
                     <div class="row g-3">
                         <div class="col-12 d-flex align-items-start">
                             <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
@@ -243,7 +368,8 @@
                         </div>
                         <div class="col-12 d-flex align-items-start">
                             <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
-                            <div><strong>Security by Design:</strong> Zero-trust models and advanced VPN architectures.</div>
+                            <div><strong>Security by Design:</strong> Zero-trust models and advanced VPN architectures.
+                            </div>
                         </div>
                         <div class="col-12 d-flex align-items-start">
                             <i class="bi bi-check-circle-fill text-success me-3 mt-1"></i>
@@ -305,10 +431,12 @@
                 </table>
             </div>
         </div>
-    </section>    <section id="contact" class="bg-dark-blue text-white py-5">
+    </section>
+    <section id="contact" class="bg-dark-blue text-white py-5">
         <div class="container text-center py-lg-5">
             <h2 class="fw-bold mb-2">Ready to Optimize?</h2>
-            <p class="mb-5 opacity-75 mx-auto" style="max-width: 500px;">Book a consultation to build your future-proof roadmap.</p>
+            <p class="mb-5 opacity-75 mx-auto" style="max-width: 500px;">Book a consultation to build your future-proof
+                roadmap.</p>
 
             <div class="row justify-content-center text-start">
                 <div class="col-12 col-md-8 col-lg-5">
@@ -316,7 +444,8 @@
                         <form action="https://formspree.io/f/johanputrarahmadan@gmail.com" method="POST">
                             <div class="mb-4">
                                 <label for="work_email" class="form-label">Work Email</label>
-                                <input type="email" id="work_email" name="email" class="form-control" placeholder="name@company.com" required>
+                                <input type="email" id="work_email" name="email" class="form-control"
+                                    placeholder="name@company.com" required>
                             </div>
                             <div class="mb-4">
                                 <label for="service_select" class="form-label">Service</label>
@@ -328,9 +457,11 @@
                             </div>
                             <div class="mb-4">
                                 <label for="project_brief" class="form-label">Message</label>
-                                <textarea id="project_brief" name="message" class="form-control" rows="5" placeholder="Briefly describe your goals..." required></textarea>
+                                <textarea id="project_brief" name="message" class="form-control" rows="5"
+                                    placeholder="Briefly describe your goals..." required></textarea>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-submit w-100 text-white fw-bold">Submit Request</button>
+                            <button type="submit" class="btn btn-primary btn-submit w-100 text-white fw-bold">Submit
+                                Request</button>
                         </form>
                     </div>
                 </div>
@@ -350,4 +481,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

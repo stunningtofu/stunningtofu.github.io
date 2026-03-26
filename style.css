@@ -53,3 +53,35 @@ html {
 ::-webkit-scrollbar-thumb {
     @apply bg-muted-gray rounded-full;
 }
+
+/* Workflow Section Styles - stunningtofu */
+.workflow-section {
+    background: #f8f9fa;
+}
+
+.step {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.step:hover {
+    transform: translateY(-8px) scale(1.04);
+}
+
+.workflow-card {
+    transition: all 0.3s ease;
+}
+
+.workflow-card:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.flow-line {
+    stroke-dasharray: 10 8;
+}
+
+/* Responsive adjustment for workflow */
+@media (max-width: 1024px) {
+    .workflow-arrow {
+        display: none;
+    }
+}

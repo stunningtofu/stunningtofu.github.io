@@ -54,29 +54,32 @@ html {
     @apply bg-muted-gray rounded-full;
 }
 
-/* Workflow Section Styles - stunningtofu */
-.workflow-section {
-    background: #f8f9fa;
-}
-
+/* Workflow Animation - Updated */
 .step {
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.step:hover {
-    transform: translateY(-8px) scale(1.04);
+.step.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .workflow-card {
-    transition: all 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .workflow-card:hover {
-    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+    border-color: rgb(0 86 179 / 0.2);
 }
 
-.flow-line {
-    stroke-dasharray: 10 8;
+/* Icon hover animation */
+.step:hover .iconify {
+    transform: scale(1.18) rotate(8deg);
+    transition: transform 0.4s ease;
 }
 
 /* Responsive adjustment for workflow */

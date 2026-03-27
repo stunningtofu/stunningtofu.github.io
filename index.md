@@ -49,8 +49,10 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
                 robust security, and seamless scalability for your applications.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#services" class="inline-flex items-center justify-center w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">View Technical Services</a>
-                <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto bg-transparent border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Schedule a Consultation</a>
+                <a href="#services" 
+                   class="inline-flex items-center justify-center w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">View Technical Services</a>
+                <a href="#contact" 
+                   class="inline-flex items-center justify-center w-full sm:w-auto bg-transparent border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Schedule a Consultation</a>
             </div>
         </div>
     </div>
@@ -154,16 +156,17 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         <div class="text-center mb-12 sm:mb-16">
             <h2 class="text-2xl sm:text-3xl font-bold text-dark-slate tracking-tight">Our Professional Workflow</h2>
             <p class="mt-4 text-muted-gray max-w-2xl mx-auto text-sm sm:text-base">
-                Proses kerja yang terstruktur, transparan, dan berorientasi hasil untuk memastikan proyek infrastruktur Anda berjalan lancar dari awal hingga maintenance.
+                A structured, transparent, and results-oriented process to ensure your infrastructure project runs smoothly from start to finish.
             </p>
         </div>
 
         <div class="relative">
+            <!-- SVG Flow Line -->
             <svg class="absolute top-10 left-0 w-full hidden lg:block" height="80" aria-hidden="true">
                 <defs>
                     <linearGradient id="flowGradient" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" stop-color="#343A40">
-                            <animate attributeName="offset" values="0;1" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="offset" values="0;1" dur="4s" repeatCount="indefinite" />
                         </stop>
                         <stop offset="100%" stop-color="#6C757D" />
                     </linearGradient>
@@ -171,6 +174,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
                 <line x1="0" y1="40" x2="100%" y2="40" stroke="url(#flowGradient)" stroke-width="3" stroke-dasharray="12 8" />
             </svg>
 
+            <!-- Workflow Steps -->
             <div id="workflow" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 relative z-10">
             </div>
         </div>
@@ -197,12 +201,12 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
     <p>&copy; 2026 stunningtofu. All rights reserved. | Architected for operational excellence.</p>
 </footer>
 
-<!-- ==================== WORKFLOW SCRIPT ==================== -->
+<!-- ==================== WORKFLOW SCRIPT + ANIMATION ==================== -->
 <script>
     const steps = [
         { 
             title: "Consultation & Diagnosis", 
-            icon: "mdi:account-question",                    // Professional consultation
+            icon: "mdi:account-question-outline",
             points: [
                 "Understanding your business needs and technical objectives",
                 "Identifying infrastructure challenges and opportunities",
@@ -211,7 +215,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Proposal & Agreement", 
-            icon: "mdi:handshake",                           // Clean handshake
+            icon: "mdi:file-document-check",
             points: [
                 "Defining scope, timeline, and deliverables",
                 "Adjusting pricing and collaboration model",
@@ -220,7 +224,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Execution & Configuration", 
-            icon: "mdi:hammer-wrench",                       // Best for implementation
+            icon: "mdi:hammer-wrench",
             points: [
                 "Implementing infrastructure and services",
                 "Applying best practice configurations",
@@ -229,7 +233,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Testing & Handover", 
-            icon: "mdi:check-circle",                        // Clear & positive
+            icon: "mdi:check-circle",
             points: [
                 "Conducting functional and performance testing",
                 "Validating system readiness",
@@ -238,7 +242,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Support & Maintenance", 
-            icon: "mdi:shield-check",                        // Reliability & ongoing care
+            icon: "mdi:shield-check",
             points: [
                 "Ongoing monitoring and support",
                 "Incident handling and troubleshooting",
@@ -251,25 +255,58 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
 
     steps.forEach((step, index) => {
         const el = document.createElement("div");
-        el.className = "step group flex flex-col items-center text-center relative cursor-pointer";
+        el.className = `step group flex flex-col items-center text-center relative cursor-pointer`;
 
         el.innerHTML = `
-            ${index !== 0 ? `<div class="block lg:hidden mb-4"><span class="iconify text-3xl" data-icon="mdi:arrow-down-bold" style="color:#343A40"></span></div>` : ""}
-            
+            ${index !== 0 ? `
+                <div class="block lg:hidden mb-4">
+                    <span class="iconify text-3xl" data-icon="mdi:arrow-down-bold" style="color:#343A40"></span>
+                </div>
+            ` : ""}
+
             <div class="w-16 h-16 flex items-center justify-center rounded-2xl bg-white shadow-md border border-gray-100 transition-all duration-300 group-hover:shadow-xl group-hover:border-deep-blue/30">
                 <span class="iconify text-3xl" data-icon="${step.icon}" style="color:#343A40"></span>
             </div>
 
             <div class="mt-6 p-6 rounded-2xl shadow-sm bg-white border border-gray-100 workflow-card h-full transition-all duration-300">
-                <h3 class="font-semibold text-dark-slate mb-4 min-h-[48px] text-lg">${index + 1}. ${step.title}</h3>
+                <h3 class="font-semibold text-dark-slate mb-4 min-h-[48px] text-lg">
+                    ${index + 1}. ${step.title}
+                </h3>
                 <ul class="text-sm space-y-3 text-left text-muted-gray">
-                    ${step.points.map(p => `<li class="flex gap-2"><span class="text-deep-blue mt-1">•</span><span>${p}</span></li>`).join("")}
+                    ${step.points.map(p => `
+                        <li class="flex gap-2">
+                            <span class="text-deep-blue mt-1">•</span>
+                            <span>${p}</span>
+                        </li>
+                    `).join("")}
                 </ul>
             </div>
 
-            ${index !== steps.length - 1 ? `<div class="hidden lg:block absolute top-8 -right-6 text-4xl z-20"><span class="iconify" data-icon="mdi:arrow-right-bold" style="color:#343A40"></span></div>` : ""}
+            ${index !== steps.length - 1 ? `
+                <div class="hidden lg:block absolute top-8 -right-6 text-4xl z-20">
+                    <span class="iconify" data-icon="mdi:arrow-right-bold" style="color:#343A40"></span>
+                </div>
+            ` : ""}
         `;
 
         container.appendChild(el);
     });
+
+    // Scroll Animation with Stagger Effect
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, index * 120);
+            }
+        });
+    }, {
+        threshold: 0.15,
+        rootMargin: "0px 0px -50px 0px"
+    });
+
+    setTimeout(() => {
+        document.querySelectorAll('.step').forEach(step => observer.observe(step));
+    }, 300);
 </script>

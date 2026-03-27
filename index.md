@@ -26,16 +26,11 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
 
             <div id="nav-menu"
                 class="hidden sm:flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mt-4 sm:mt-0 space-y-2 sm:space-y-0 sm:space-x-8">
-                <a href="#top"
-                    class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Home</a>
-                <a href="#platforms"
-                    class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Platforms</a>
-                <a href="#services"
-                    class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Services</a>
-                <a href="/learn/"
-                    class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Learn</a>
-                <a href="#contact"
-                    class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Contact</a>
+                <a href="#top" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Home</a>
+                <a href="#platforms" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Platforms</a>
+                <a href="#services" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Services</a>
+                <a href="/learn/" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Learn</a>
+                <a href="#contact" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Contact</a>
             </div>
         </div>
     </div>
@@ -54,10 +49,8 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
                 robust security, and seamless scalability for your applications.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                <a href="#services"
-                    class="inline-flex items-center justify-center w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">View Technical Services</a>
-                <a href="#contact"
-                    class="inline-flex items-center justify-center w-full sm:w-auto bg-transparent border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Schedule a Consultation</a>
+                <a href="#services" class="inline-flex items-center justify-center w-full sm:w-auto bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg">View Technical Services</a>
+                <a href="#contact" class="inline-flex items-center justify-center w-full sm:w-auto bg-transparent border border-white/30 text-white px-6 py-3 rounded-lg font-semibold hover:bg-white/10 transition-colors">Schedule a Consultation</a>
             </div>
         </div>
     </div>
@@ -70,15 +63,50 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         <p class="text-muted-gray mb-10 max-w-2xl mx-auto text-sm sm:text-base">Extensive hands-on experience provisioning, securing, and maintaining production-grade environments across leading cloud platforms.</p>
 
         <div class="flex flex-wrap justify-center items-center gap-10 sm:gap-16 mt-10">
-            <!-- AWS -->
             <div class="flex flex-col items-center group" aria-label="Amazon Web Services">
-                <img src="https://api.iconify.design/fa6-brands:aws.svg?color=%23343A40" alt="AWS Logo" 
-                     class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <img src="https://api.iconify.design/fa6-brands:aws.svg?color=%23343A40" alt="AWS Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
                 <span class="mt-4 text-sm font-semibold text-dark-slate">AWS</span>
             </div>
-            <!-- Google Cloud, DigitalOcean, Vultr, Docker Swarm, Kubernetes, Jenkins, GitHub Actions, GitLab, CentOS, Ubuntu -->
-            <!-- (saya singkatkan di sini, tapi kamu copy semua icon yang sama seperti sebelumnya) -->
-            <!-- ... isi semua platform icon kamu di sini ... -->
+            <div class="flex flex-col items-center group" aria-label="Google Cloud Platform">
+                <img src="https://api.iconify.design/mdi:google-cloud.svg?color=%23343A40" alt="Google Cloud Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Google Cloud</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="DigitalOcean">
+                <img src="https://api.iconify.design/fa6-brands:digital-ocean.svg?color=%23343A40" alt="DigitalOcean Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">DigitalOcean</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="Vultr">
+                <img src="https://api.iconify.design/simple-icons:vultr.svg?color=%23343A40" alt="Vultr Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Vultr</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="Docker Swarm">
+                <img src="https://api.iconify.design/simple-icons:docker.svg?color=%23343A40" alt="Docker Swarm Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Docker Swarm</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="Kubernetes">
+                <img src="https://api.iconify.design/simple-icons:kubernetes.svg?color=%23343A40" alt="Kubernetes Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Kubernetes</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="Jenkins">
+                <img src="https://api.iconify.design/simple-icons:jenkins.svg?color=%23343A40" alt="Jenkins Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Jenkins</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="GitHub Actions">
+                <img src="https://api.iconify.design/simple-icons:githubactions.svg?color=%23343A40" alt="GitHub Actions Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">GitHub Actions</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="GitLab">
+                <img src="https://api.iconify.design/simple-icons:gitlab.svg?color=%23343A40" alt="GitLab Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">GitLab</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="CentOS">
+                <img src="https://api.iconify.design/simple-icons:centos.svg?color=%23343A40" alt="CentOS Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">CentOS</span>
+            </div>
+            <div class="flex flex-col items-center group" aria-label="Ubuntu">
+                <img src="https://api.iconify.design/simple-icons:ubuntu.svg?color=%23343A40" alt="Ubuntu Logo" class="w-16 h-16 sm:w-20 sm:h-20 opacity-70 group-hover:opacity-100 transition-opacity duration-300">
+                <span class="mt-4 text-sm font-semibold text-dark-slate">Ubuntu</span>
+            </div>
         </div>
     </div>
 </section>
@@ -92,8 +120,30 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <!-- Isi semua article services kamu di sini (Advanced Server Maintenance, Kubernetes & Docker Setup, dll) -->
-            <!-- Copy dari versi lama kamu, tetap sama persis -->
+            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 inline-block">Advanced Server Maintenance</h3>
+                <p class="text-muted-gray text-sm leading-relaxed mb-4">Comprehensive Linux server administration including proactive security patching, firewall management, resource optimization, and developing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Bash/Python</span> automation scripts for routine system maintenance.</p>
+            </article>
+
+            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 inline-block">Kubernetes & Docker Setup</h3>
+                <p class="text-muted-gray text-sm leading-relaxed mb-4">Architecture and deployment of containerized applications using <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Docker</span>. Managing production-scale orchestration via <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Docker Swarm</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Kubernetes (K8s)</span> to guarantee zero-downtime deployments.</p>
+            </article>
+
+            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 inline-block">Observability & Monitoring</h3>
+                <p class="text-muted-gray text-sm leading-relaxed mb-4">Advanced metrics configuration utilizing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Grafana</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Prometheus</span>. Designing real-time visualization dashboards to monitor server workloads, network traffic anomalies, and application health.</p>
+            </article>
+
+            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 inline-block">WordPress Server Optimization</h3>
+                <p class="text-muted-gray text-sm leading-relaxed mb-4">Performance tuning for web servers (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Nginx</span>/<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Apache</span>), SSL certificate provisioning, database optimization (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">MySQL</span>/<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">MariaDB</span>), and implementing server-side caching mechanisms for high-traffic environments.</p>
+            </article>
+
+            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300 sm:col-span-2 lg:col-span-2">
+                <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 inline-block">Cloud Ecosystem Integration</h3>
+                <p class="text-muted-gray text-sm leading-relaxed mb-4">Implementing cloud architecture best practices. Specializing in secure <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">VPC</span> networking, Identity and Access Management (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">IAM/SSO</span>), and isolating workloads effectively within modern cloud environments.</p>
+            </article>
         </div>
     </div>
 </main>

@@ -107,3 +107,30 @@ html {
 .markdown-content li { margin-bottom: 0.5rem; }
 .markdown-content code { background-color: #f1f5f9; padding: 0.2rem 0.4rem; border-radius: 4px; font-family: monospace; font-size: 0.875em; color: #e11d48; }
 .markdown-content pre { background-color: #1e293b; color: #f8fafc; padding: 1.25rem; border-radius: 8px; overflow-x: auto; margin: 1.5rem 0; font-size: 0.875rem; }
+
+
+/* =========================================
+   SERVICES CARD HOVER ANIMATION 
+========================================= */
+.service-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-front {
+    transition: transform 0.5s ease-in-out;
+}
+
+.service-back {
+    transform: translateY(100%);
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Aksi saat card di-hover */
+.service-card:hover .service-front {
+    transform: translateY(-100%);
+}
+
+.service-card:hover .service-back {
+    transform: translateY(0);
+}

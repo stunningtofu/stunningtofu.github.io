@@ -120,61 +120,60 @@ title: Welcome to stunningtofu
             <p class="mt-4 text-muted-gray max-w-2xl mx-auto text-sm sm:text-base">A structured, engineering-first approach to maintaining and scaling your production environments.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-center">
             
-            <article class="relative group h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl overflow-hidden border border-gray-100">
-                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-transform duration-500 ease-in-out group-hover:-translate-y-full bg-white z-10">
-                    <span class="iconify text-deep-blue text-6xl mb-4" data-icon="lucide:server"></span>
+            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
+                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
+                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:server-security"></span>
                     <h3 class="text-xl font-bold text-dark-slate">Advanced Server Maintenance</h3>
                 </div>
-
-                <div class="absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 border-t-4 border-deep-blue">
+                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
                     <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">Advanced Server Maintenance</h3>
                     <p class="text-muted-gray text-sm leading-relaxed">Comprehensive Linux server administration including proactive security patching, firewall management, resource optimization, and developing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Bash/Python</span> scripts.</p>
                 </div>
             </article>
 
-            <article class="relative group h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl overflow-hidden border border-gray-100">
-                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-transform duration-500 ease-in-out group-hover:-translate-y-full bg-white z-10">
-                    <span class="iconify text-deep-blue text-6xl mb-4" data-icon="lucide:container"></span>
+            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
+                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
+                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:kubernetes"></span>
                     <h3 class="text-xl font-bold text-dark-slate">Kubernetes & Docker Setup</h3>
                 </div>
-                <div class="absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 border-t-4 border-deep-blue">
+                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
                     <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">Kubernetes & Docker Setup</h3>
-                    <p class="text-muted-gray text-sm leading-relaxed">Architecture and deployment of containerized applications using <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Docker</span>. Managing production orchestration via <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Docker Swarm</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Kubernetes</span>.</p>
+                    <p class="text-muted-gray text-sm leading-relaxed">Architecture and deployment of containerized applications using <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Docker</span>. Managing production orchestration via <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Swarm</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">K8s</span>.</p>
                 </div>
             </article>
 
-            <article class="relative group h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl overflow-hidden border border-gray-100">
-                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-transform duration-500 ease-in-out group-hover:-translate-y-full bg-white z-10">
-                    <span class="iconify text-deep-blue text-6xl mb-4" data-icon="lucide:activity"></span>
+            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
+                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
+                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:monitor-dashboard"></span>
                     <h3 class="text-xl font-bold text-dark-slate">Observability & Monitoring</h3>
                 </div>
-                <div class="absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 border-t-4 border-deep-blue">
+                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
                     <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">Observability & Monitoring</h3>
                     <p class="text-muted-gray text-sm leading-relaxed">Advanced metrics configuration utilizing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Grafana</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Prometheus</span>. Designing real-time visualization dashboards to monitor workloads.</p>
                 </div>
             </article>
 
-            <article class="relative group h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl overflow-hidden border border-gray-100">
-                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-transform duration-500 ease-in-out group-hover:-translate-y-full bg-white z-10">
-                    <span class="iconify text-deep-blue text-6xl mb-4" data-icon="lucide:zap"></span>
+            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
+                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
+                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:rocket-launch"></span>
                     <h3 class="text-xl font-bold text-dark-slate">WordPress Server Optimization</h3>
                 </div>
-                <div class="absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 border-t-4 border-deep-blue">
+                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
                     <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">WordPress Server Optimization</h3>
                     <p class="text-muted-gray text-sm leading-relaxed">Performance tuning for web servers (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Nginx/Apache</span>), SSL provisioning, database optimization (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">MySQL/MariaDB</span>), and caching.</p>
                 </div>
             </article>
 
-            <article class="relative group h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl overflow-hidden border border-gray-100 sm:col-span-2 lg:col-span-2">
-                <div class="absolute inset-0 flex flex-col items-center justify-center p-6 text-center transition-transform duration-500 ease-in-out group-hover:-translate-y-full bg-white z-10">
-                    <span class="iconify text-deep-blue text-6xl mb-4" data-icon="lucide:cloud"></span>
+            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
+                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
+                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:cloud-network"></span>
                     <h3 class="text-xl font-bold text-dark-slate">Cloud Ecosystem Integration</h3>
                 </div>
-                <div class="absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out z-20 border-t-4 border-deep-blue">
+                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
                     <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">Cloud Ecosystem Integration</h3>
-                    <p class="text-muted-gray text-sm leading-relaxed">Implementing cloud architecture best practices. Specializing in secure <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">VPC</span> networking, Identity and Access Management (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">IAM/SSO</span>), and workload isolation.</p>
+                    <p class="text-muted-gray text-sm leading-relaxed">Implementing cloud architecture best practices. Specializing in secure <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">VPC</span> networking, Access Management (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">IAM/SSO</span>), and workload isolation.</p>
                 </div>
             </article>
 

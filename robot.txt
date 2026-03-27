@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://stunningtofu.github.io/sitemap.xml

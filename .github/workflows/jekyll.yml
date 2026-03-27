@@ -2,7 +2,7 @@ name: Deploy Jekyll site to Pages
 
 on:
   push:
-    branches: ["main"] 
+    branches: ["main"]
   workflow_dispatch:
 
 permissions:
@@ -21,14 +21,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # Menggunakan Node.js terbaru (v22)
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundler-cache: true
+          # bundler-cache akan otomatis menjalankan 'bundle install'
+          bundler-cache: true 
 
       - name: Build with Jekyll
-        run: bundle exec jekyll build --verbose
+        # --trace ditambahkan untuk melihat detail jika terjadi error lagi
+        run: bundle exec jekyll build --verbose --trace
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

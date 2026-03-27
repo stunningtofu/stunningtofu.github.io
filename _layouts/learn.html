@@ -1,19 +1,28 @@
 ---
 layout: default
 ---
-<div style="position: fixed; width: 100%; z-index: 1000; top: 0;">
+<div class="fixed w-full z-[1000] top-0">
     {% include navbar.html %}
 </div>
 
-<div style="padding-top: 64px;">
+<div class="docs-main-container" style="margin-top: 64px;">
     {{ content }}
 </div>
 
 {% include footer.html %}
 
 <style>
-    /* Penyesuaian agar sidebar tema tidak tertutup navbar fixed Anda */
-    .side-bar { top: 64px !important; height: calc(100vh - 64px) !important; }
-    .main-header { top: 64px !important; }
-    .main-content-wrap { padding-top: 80px !important; }
+    /* Paksa Sidebar dan Header Tema turun ke bawah Navbar Anda */
+    .side-bar { 
+        top: 64px !important; 
+        height: calc(100vh - 64px) !important; 
+    }
+    .main-header { 
+        top: 64px !important; 
+        background-color: #111; /* Sesuaikan dengan tema dark Anda */
+    }
+    /* Mencegah konten tertutup footer jika kontennya sedikit */
+    .main-content-wrap {
+        min-height: calc(100vh - 200px);
+    }
 </style>

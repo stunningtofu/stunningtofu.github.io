@@ -1,25 +1,15 @@
 title: stunningtofu docs
-description: DevOps & Cloud Infrastructure Documentation
-
 url: "https://stunningtofu.github.io"
 baseurl: ""
 
-# Konfigurasi Tema (WAJIB)
 remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme # Plugin ini yang mengaktifkan tema
+  - jekyll-remote-theme
 
-# Pengaturan Just the Docs
 just_the_docs:
   color_scheme: dark
   search_enabled: true
-  # Klik logo di sidebar balik ke Home utama
-  logo: "/" 
-
-# Agar pencarian lebih ringkas (hanya judul/heading)
-search:
-  heading_level: 2
-  previews: 0
+  logo: "/" # Link logo ke Home utama

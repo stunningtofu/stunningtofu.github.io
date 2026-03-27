@@ -23,14 +23,14 @@ title: Welcome to stunningtofu
                 </svg>
             </button>
 
-<!-- <div id="nav-menu"
-    class="hidden sm:flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mt-4 sm:mt-0 space-y-2 sm:space-y-0 sm:space-x-8">
-    <a href="#top" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Home</a>
-    <a href="#platforms" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Platforms</a>
-    <a href="#services" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Services</a>
-    <a href="/learn/" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Learn</a>
-    <a href="#contact" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Contact</a>
-</div> -->
+            <div id="nav-menu"
+                class="hidden sm:flex flex-col sm:flex-row justify-center items-center w-full sm:w-auto mt-4 sm:mt-0 space-y-2 sm:space-y-0 sm:space-x-8">
+                <a href="#top" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Home</a>
+                <a href="#platforms" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Platforms</a>
+                <a href="#services" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Services</a>
+                <a href="/learn/" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Learn</a>
+                <a href="#contact" class="text-muted-gray hover:text-deep-blue transition-colors font-medium text-sm sm:text-base">Contact</a>
+            </div>
         </div>
     </div>
 </nav>

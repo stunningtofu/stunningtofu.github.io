@@ -88,3 +88,14 @@ html {
         display: none;
     }
 }
+
+/* Custom styling to match previous branding */
+:root {
+  --jtd-brand-color: #2c3e50; /* Ganti dengan warna utama brand Anda */
+  --jtd-brand-color-light: #34495e;
+}
+
+.learn-content h1, .learn-content h2 {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}

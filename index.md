@@ -206,7 +206,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
     const steps = [
         { 
             title: "Consultation & Diagnosis", 
-            icon: "mdi:account-question-outline",
+            icon: "mdi:lightbulb-outline",
             points: [
                 "Understanding your business needs and technical objectives",
                 "Identifying infrastructure challenges and opportunities",
@@ -215,7 +215,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Proposal & Agreement", 
-            icon: "mdi:file-document-check",
+            icon: "mdi:handshake",
             points: [
                 "Defining scope, timeline, and deliverables",
                 "Adjusting pricing and collaboration model",
@@ -224,7 +224,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Execution & Configuration", 
-            icon: "mdi:hammer-wrench",
+            icon: "mdi:rocket-launch",
             points: [
                 "Implementing infrastructure and services",
                 "Applying best practice configurations",
@@ -233,7 +233,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Testing & Handover", 
-            icon: "mdi:check-circle",
+            icon: "mdi:check-bold",
             points: [
                 "Conducting functional and performance testing",
                 "Validating system readiness",
@@ -242,7 +242,7 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
         },
         { 
             title: "Support & Maintenance", 
-            icon: "mdi:shield-check",
+            icon: "mdi:lifebuoy",
             points: [
                 "Ongoing monitoring and support",
                 "Incident handling and troubleshooting",

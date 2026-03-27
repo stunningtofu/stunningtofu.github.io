@@ -150,16 +150,51 @@ description: stunningtofu offers professional DevOps and Cloud Infrastructure co
 <!-- ==================== WORKFLOW SCRIPT ==================== -->
 <script>
     const steps = [
-        { title: "Consultation & Diagnosis", icon: "simple-icons:googlechat",
-          points: ["Memahami kebutuhan bisnis dan tujuan teknis Anda", "Mengidentifikasi kendala dan peluang infrastruktur", "Memberikan rekomendasi solusi awal"] },
-        { title: "Proposal & Agreement", icon: "simple-icons:handshake",
-          points: ["Mendefinisikan scope, timeline, dan deliverables", "Menyesuaikan harga dan model kerjasama", "Finalisasi kesepakatan dan kickoff proyek"] },
-        { title: "Execution & Configuration", icon: "simple-icons:docker",
-          points: ["Implementasi infrastruktur dan layanan", "Penerapan konfigurasi best practice", "Memastikan skalabilitas dan keamanan"] },
-        { title: "Testing & Handover", icon: "simple-icons:checkmarx",
-          points: ["Pengujian fungsional dan performa", "Validasi kesiapan sistem", "Penyerahan dokumentasi dan knowledge transfer"] },
-        { title: "Support & Maintenance", icon: "simple-icons:opsgenie",
-          points: ["Monitoring dan dukungan berkelanjutan", "Penanganan insiden & troubleshooting", "Optimalisasi performa secara berkala"] }
+        { 
+            title: "Consultation & Diagnosis", 
+            icon: "mdi:account-question",                    // Professional consultation
+            points: [
+                "Understanding your business needs and technical objectives",
+                "Identifying infrastructure challenges and opportunities",
+                "Providing initial solution recommendations"
+            ] 
+        },
+        { 
+            title: "Proposal & Agreement", 
+            icon: "mdi:handshake",                           // Clean handshake
+            points: [
+                "Defining scope, timeline, and deliverables",
+                "Adjusting pricing and collaboration model",
+                "Finalizing agreement and project kickoff"
+            ] 
+        },
+        { 
+            title: "Execution & Configuration", 
+            icon: "mdi:hammer-wrench",                       // Best for implementation
+            points: [
+                "Implementing infrastructure and services",
+                "Applying best practice configurations",
+                "Ensuring scalability and security"
+            ] 
+        },
+        { 
+            title: "Testing & Handover", 
+            icon: "mdi:check-circle",                        // Clear & positive
+            points: [
+                "Conducting functional and performance testing",
+                "Validating system readiness",
+                "Delivering documentation and knowledge transfer"
+            ] 
+        },
+        { 
+            title: "Support & Maintenance", 
+            icon: "mdi:shield-check",                        // Reliability & ongoing care
+            points: [
+                "Ongoing monitoring and support",
+                "Incident handling and troubleshooting",
+                "Continuous performance optimization"
+            ] 
+        }
     ];
 
     const container = document.getElementById("workflow");

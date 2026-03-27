@@ -113,7 +113,7 @@ title: Welcome to stunningtofu
 </section>
 
 <!-- SERVICES -->
-<main id="services" class="py-16 sm:py-20 bg-light-gray">
+<main id="services" class="py-16 sm:py-20 bg-light-gray overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-12 sm:mb-16">
             <h2 class="text-2xl sm:text-3xl font-bold text-dark-slate tracking-tight">DevOps & IT Infrastructure Services</h2>
@@ -121,44 +121,61 @@ title: Welcome to stunningtofu
         </div>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                <div class="flex items-center mb-3">
-                    <iconify-icon icon="lucide:server" class="text-deep-blue text-2xl sm:text-3xl mr-3"></iconify-icon>
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate border-b-2 border-deep-blue pb-1 inline-block">Advanced Server Maintenance</h3>
+            
+            <article class="relative group h-[280px] sm:h-[260px] border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-300 group-hover:opacity-10 group-hover:blur-sm z-10">
+                    <iconify-icon icon="lucide:server" class="text-deep-blue text-5xl sm:text-6xl mb-6"></iconify-icon>
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark-slate tracking-tight">Advanced Server Maintenance</h3>
                 </div>
-                <p class="text-muted-gray text-sm leading-relaxed mb-4">Comprehensive Linux server administration including proactive security patching, firewall management, resource optimization, and developing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Bash/Python</span> automation scripts for routine system maintenance.</p>
+
+                <div class="absolute inset-0 bg-deep-blue/95 p-6 sm:p-8 flex flex-col justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-white/20 pb-2">Technical Details</h3>
+                    <p class="text-white/90 text-sm leading-relaxed mb-4">Comprehensive Linux server administration including proactive security patching, firewall management, resource optimization, and developing Bash/Python automation scripts.</p>
+                </div>
             </article>
 
-            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                <div class="flex items-center mb-3">
-                    <iconify-icon icon="lucide:container" class="text-deep-blue text-2xl sm:text-3xl mr-3"></iconify-icon>
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate border-b-2 border-deep-blue pb-1 inline-block">Kubernetes & Docker Setup</h3>
+            <article class="relative group h-[280px] sm:h-[260px] border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-300 group-hover:opacity-10 group-hover:blur-sm z-10">
+                    <iconify-icon icon="lucide:container" class="text-deep-blue text-5xl sm:text-6xl mb-6"></iconify-icon>
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark-slate tracking-tight">Kubernetes & Docker Setup</h3>
                 </div>
-                <p class="text-muted-gray text-sm leading-relaxed mb-4">Architecture and deployment of containerized applications using <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Docker</span>. Managing production-scale orchestration via <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Docker Swarm</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Kubernetes (K8s)</span> to guarantee zero-downtime deployments.</p>
+                <div class="absolute inset-0 bg-deep-blue/95 p-6 sm:p-8 flex flex-col justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-white/20 pb-2">Infrastructure Details</h3>
+                    <p class="text-white/90 text-sm leading-relaxed mb-4">Architecture of containerized apps using Docker. Managing production-scale orchestration via Docker Swarm and Kubernetes (K8s) for zero-downtime.</p>
+                </div>
             </article>
 
-            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                <div class="flex items-center mb-3">
-                    <iconify-icon icon="lucide:activity" class="text-deep-blue text-2xl sm:text-3xl mr-3"></iconify-icon>
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate border-b-2 border-deep-blue pb-1 inline-block">Observability & Monitoring</h3>
+            <article class="relative group h-[280px] sm:h-[260px] border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-300 group-hover:opacity-10 group-hover:blur-sm z-10">
+                    <iconify-icon icon="lucide:activity" class="text-deep-blue text-5xl sm:text-6xl mb-6"></iconify-icon>
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark-slate tracking-tight">Observability & Monitoring</h3>
                 </div>
-                <p class="text-muted-gray text-sm leading-relaxed mb-4">Advanced metrics configuration utilizing <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Grafana</span> and <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Prometheus</span>. Designing real-time visualization dashboards to monitor server workloads, network traffic anomalies, and application health.</p>
+                <div class="absolute inset-0 bg-deep-blue/95 p-6 sm:p-8 flex flex-col justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-white/20 pb-2">Monitoring Stack</h3>
+                    <p class="text-white/90 text-sm leading-relaxed mb-4">Metrics configuration utilizing Grafana and Prometheus. Real-time visualization dashboards to monitor server workloads and application health.</p>
+                </div>
             </article>
 
-            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300">
-                <div class="flex items-center mb-3">
-                    <iconify-icon icon="lucide:zap" class="text-deep-blue text-2xl sm:text-3xl mr-3"></iconify-icon>
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate border-b-2 border-deep-blue pb-1 inline-block">WordPress Server Optimization</h3>
+            <article class="relative group h-[280px] sm:h-[260px] border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-300 group-hover:opacity-10 group-hover:blur-sm z-10">
+                    <iconify-icon icon="lucide:zap" class="text-deep-blue text-5xl sm:text-6xl mb-6"></iconify-icon>
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark-slate tracking-tight">WordPress Server Optimization</h3>
                 </div>
-                <p class="text-muted-gray text-sm leading-relaxed mb-4">Performance tuning for web servers (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Nginx</span>/<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">Apache</span>), SSL certificate provisioning, database optimization (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">MySQL</span>/<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">MariaDB</span>), and implementing server-side caching mechanisms for high-traffic environments.</p>
+                <div class="absolute inset-0 bg-deep-blue/95 p-6 sm:p-8 flex flex-col justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-white/20 pb-2">Optimization Details</h3>
+                    <p class="text-white/90 text-sm leading-relaxed mb-4">Performance tuning for Nginx/Apache, SSL provisioning, MySQL optimization, and implementing server-side caching mechanisms.</p>
+                </div>
             </article>
 
-            <article class="p-6 sm:p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl hover:border-blue-100 transition-all duration-300 sm:col-span-2 lg:col-span-2">
-                <div class="flex items-center mb-3">
-                    <iconify-icon icon="lucide:cloud" class="text-deep-blue text-2xl sm:text-3xl mr-3"></iconify-icon>
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate border-b-2 border-deep-blue pb-1 inline-block">Cloud Ecosystem Integration</h3>
+            <article class="relative group h-[280px] sm:h-[260px] border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden sm:col-span-2 lg:col-span-2">
+                <div class="absolute inset-0 flex flex-col items-center justify-center p-8 text-center transition-opacity duration-300 group-hover:opacity-10 group-hover:blur-sm z-10">
+                    <iconify-icon icon="lucide:cloud" class="text-deep-blue text-5xl sm:text-6xl mb-6"></iconify-icon>
+                    <h3 class="text-xl sm:text-2xl font-bold text-dark-slate tracking-tight">Cloud Ecosystem Integration</h3>
                 </div>
-                <p class="text-muted-gray text-sm leading-relaxed mb-4">Implementing cloud architecture best practices. Specializing in secure <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">VPC</span> networking, Identity and Access Management (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs sm:text-sm border border-gray-200 font-medium">IAM/SSO</span>), and isolating workloads effectively within modern cloud environments.</p>
+                <div class="absolute inset-0 bg-deep-blue/95 p-6 sm:p-8 flex flex-col justify-center translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-20">
+                    <h3 class="text-lg font-bold text-white mb-3 border-b border-white/20 pb-2">Integration Focus</h3>
+                    <p class="text-white/90 text-sm leading-relaxed mb-4">Implementing cloud architecture best practices. Specializing in secure VPC networking, Identity Access Management (IAM/SSO), and isolating workloads effectively.</p>
+                </div>
             </article>
         </div>
     </div>

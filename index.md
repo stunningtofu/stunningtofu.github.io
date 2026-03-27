@@ -1,6 +1,6 @@
 ---
 title: stunningtofu | Freelance DevOps Engineer & Server Maintenance
-layout: default
+layout: home
 description: stunningtofu offers professional DevOps and Cloud Infrastructure consulting. Specializing in AWS, Google Cloud, DigitalOcean, Vultr, Kubernetes, Docker Swarm, and Grafana.
 ---
 

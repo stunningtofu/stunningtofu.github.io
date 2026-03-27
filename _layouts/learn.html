@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | stunningtofu docs</title>
+    {% seo %}
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <script>
@@ -17,33 +18,75 @@
     </script>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
-<body class="bg-white">
+<body class="bg-white text-slate-900 antialiased">
 
-    {% include navbar.html %}
-
-    <div class="flex flex-col md:flex-row min-h-screen pt-20">
-        <aside class="w-full md:w-64 bg-light-gray border-r border-gray-200 p-6 sticky top-20 h-fit md:h-[calc(100vh-5rem)] overflow-y-auto">
-            <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">Documentation</h3>
-            <nav class="space-y-2">
-                <a href="{{ '/learn/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url == '/learn/' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Introduction</a>
-                <a href="{{ '/learn/docker/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'docker' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Docker Basics</a>
-                <a href="{{ '/learn/swarm/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'swarm' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Docker Swarm</a>
-                <a href="{{ '/learn/kubectl/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'kubectl' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Kubectl</a>
-            </nav>
-        </aside>
-
-        <article class="flex-1 p-8 md:p-12 max-w-4xl mx-auto prose prose-slate">
-            <h1 class="text-3xl font-bold text-dark-slate mb-6">{{ page.title }}</h1>
-            <div class="markdown-content text-gray-700 leading-relaxed">
-                {{ content }}
-            </div>
-        </article>
+    <div class="fixed w-full z-[100] top-0">
+        {% include navbar.html %}
     </div>
 
-    {% include footer.html %}
+    <div class="flex flex-col md:flex-row min-h-screen pt-16">
+        <aside class="w-full md:w-72 bg-light-gray border-r border-gray-200 sticky top-16 h-fit md:h-[calc(100vh-4rem)] overflow-y-auto z-40">
+            <div class="p-6">
+                <div class="relative mb-6">
+                    <input type="text" placeholder="Search docs..." class="w-full bg-white border border-gray-300 rounded-lg px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-deep-blue/20">
+                    <span class="absolute right-3 top-2.5 text-gray-400"><iconify-icon icon="lucide:search"></iconify-icon></span>
+                </div>
+
+                <nav class="space-y-1">
+                    <p class="text-[11px] font-bold text-gray-400 uppercase tracking-widest mb-2 px-3">Main Documentation</p>
+                    
+                    <a href="{{ '/learn/' | relative_url }}" class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {% if page.url == '/learn/' %} bg-deep-blue/10 text-deep-blue {% else %} text-slate-600 hover:bg-gray-200 {% endif %}">
+                        Introduction
+                    </a>
+                    
+                    <a href="{{ '/learn/docker/' | relative_url }}" class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {% if page.url contains 'docker' %} bg-deep-blue/10 text-deep-blue {% else %} text-slate-600 hover:bg-gray-200 {% endif %}">
+                        Docker Basics
+                    </a>
+
+                    <a href="{{ '/learn/swarm/' | relative_url }}" class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {% if page.url contains 'swarm' %} bg-deep-blue/10 text-deep-blue {% else %} text-slate-600 hover:bg-gray-200 {% endif %}">
+                        Docker Swarm
+                    </a>
+
+                    <a href="{{ '/learn/kubectl/' | relative_url }}" class="flex items-center px-3 py-2 text-sm font-medium rounded-lg {% if page.url contains 'kubectl' %} bg-deep-blue/10 text-deep-blue {% else %} text-slate-600 hover:bg-gray-200 {% endif %}">
+                        Kubectl (K8s)
+                    </a>
+                </nav>
+            </div>
+        </aside>
+
+        <main class="flex-1 min-w-0 bg-white">
+            <div class="max-w-4xl mx-auto px-6 py-10 md:px-12">
+                
+                <nav class="flex text-sm text-slate-500 mb-8 items-center space-x-2">
+                    <a href="{{ '/' | relative_url }}" class="hover:text-deep-blue">Home</a>
+                    <span>/</span>
+                    <a href="{{ '/learn/' | relative_url }}" class="hover:text-deep-blue">Learn</a>
+                    <span>/</span>
+                    <span class="text-slate-900 font-medium">{{ page.title }}</span>
+                </nav>
+
+                <header class="mb-10">
+                    <h1 class="text-4xl font-extrabold text-dark-slate tracking-tight">{{ page.title }}</h1>
+                    <p class="mt-4 text-lg text-slate-600">Technical guide and reference for {{ page.title }}.</p>
+                </header>
+
+                <div class="markdown-content prose prose-slate max-w-none">
+                    {{ content }}
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-gray-100 flex justify-between items-center">
+                    <p class="text-sm text-slate-500 italic">Last updated: 2026</p>
+                    <a href="#top" class="text-deep-blue text-sm font-bold hover:underline flex items-center">
+                        Back to top <iconify-icon icon="lucide:arrow-up" class="ml-1"></iconify-icon>
+                    </a>
+                </div>
+            </div>
+
+            {% include footer.html %}
+        </main>
+    </div>
 
     <script>
-        // Copy-paste logic smooth scroll & mobile menu dari home Anda
         const navToggle = document.getElementById('nav-toggle');
         const navMenu = document.getElementById('nav-menu');
         if (navToggle) navToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));

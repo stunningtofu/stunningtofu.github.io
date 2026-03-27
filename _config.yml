@@ -1,8 +1,13 @@
-title: stunningtofu docs
-url: "https://stunningtofu.github.io"
-baseurl: ""
+title: stunningtofu | DevOps
+# Hapus semua yang berbau remote_theme: just-the-docs
 
-# Hapus remote_theme: just-the-docs
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Konfigurasi sitemap agar tidak error
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "home"

@@ -1,22 +1,10 @@
-# Identitas Dokumentasi
-title: stunningtofu docs
-description: Technical documentation for DevOps and Cloud Infrastructure.
-
-# Pengaturan Just the Docs
-just_the_docs:
-  color_scheme: dark
-  # Mengarahkan klik pada judul/logo di sidebar ke halaman utama root
-  logo: "/" 
-  
-# Konfigurasi Pencarian (Optimasi agar fokus pada judul)
-search_config:
-  preview_words_before: 0
-  preview_words_after: 0
-  # Catatan: Secara default Just the Docs mencari ke seluruh teks, 
-  # pengaturan ini menghilangkan potongan paragraf di hasil pencarian agar lebih ringkas.
-
 remote_theme: just-the-docs/just-the-docs
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
   - jekyll-remote-theme
+  - jekyll-seo-tag
+
+just_the_docs:
+  color_scheme: dark
+  search_enabled: true
+  aux_links:
+    "Back to Home": "/"

@@ -1,15 +1,13 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     {% seo %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-
+    
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,7 +29,7 @@
         }
     </script>
 </head>
-<body id="top" class="font-sans antialiased selection:bg-deep-blue selection:text-white">
+<body class="font-sans antialiased selection:bg-deep-blue selection:text-white">
 
     {% include navbar.html %}
 
@@ -42,15 +40,13 @@
     {% include footer.html %}
 
     <script>
-        (function () {
-            const navToggle = document.getElementById('nav-toggle');
-            const navMenu = document.getElementById('nav-menu');
-            if (navToggle && navMenu) {
-                navToggle.addEventListener('click', () => {
-                    navMenu.classList.toggle('hidden');
-                });
-            }
-        })();
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+        }
     </script>
 </body>
 </html>

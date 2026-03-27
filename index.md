@@ -195,11 +195,6 @@ title: Welcome to stunningtofu
     </div>
 </section>
 
-<!-- FOOTER -->
-<footer class="bg-dark-slate py-8 text-center text-gray-400 text-sm px-4">
-    <p>&copy; 2026 stunningtofu. All rights reserved. | Architected for operational excellence.</p>
-</footer>
-
 <!-- ==================== WORKFLOW SCRIPT + ANIMATION ==================== -->
 <script>
     const steps = [

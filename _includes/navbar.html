@@ -1,0 +1,16 @@
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 py-4">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <a href="{{ '/' | relative_url }}" class="text-xl font-bold text-dark-slate">stunningtofu</a>
+        <div class="hidden md:flex space-x-8">
+            <a href="{{ '/' | relative_url }}" class="hover:text-deep-blue">Home</a>
+            <a href="{{ '/learn/' | relative_url }}" class="hover:text-deep-blue">Docs</a>
+        </div>
+        <button id="nav-toggle" class="md:hidden">
+            <span class="iconify" data-icon="ci:menu-alt-02"></span>
+        </button>
+    </div>
+    <div id="nav-menu" class="hidden md:hidden bg-white px-6 py-4 border-t">
+        <a href="{{ '/' | relative_url }}" class="block py-2">Home</a>
+        <a href="{{ '/learn/' | relative_url }}" class="block py-2">Docs</a>
+    </div>
+</nav>

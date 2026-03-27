@@ -1,20 +1,22 @@
-title: stunningtofu | Freelance DevOps Engineer & Server Maintenance
-description: stunningtofu offers professional DevOps and Cloud Infrastructure consulting. Specializing in AWS, Google Cloud, DigitalOcean, Vultr, Kubernetes, Docker Swarm, and Grafana.
+# Identitas Dokumentasi
+title: stunningtofu docs
+description: Technical documentation for DevOps and Cloud Infrastructure.
 
-url: "https://stunningtofu.github.io"
-baseurl: ""
+# Pengaturan Just the Docs
+just_the_docs:
+  color_scheme: dark
+  # Mengarahkan klik pada judul/logo di sidebar ke halaman utama root
+  logo: "/" 
+  
+# Konfigurasi Pencarian (Optimasi agar fokus pada judul)
+search_config:
+  preview_words_before: 0
+  preview_words_after: 0
+  # Catatan: Secara default Just the Docs mencari ke seluruh teks, 
+  # pengaturan ini menghilangkan potongan paragraf di hasil pencarian agar lebih ringkas.
 
-# Tambahkan baris ini untuk memanggil tema
 remote_theme: just-the-docs/just-the-docs
-
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme # Tambahkan ini
-
-# Konfigurasi Just the Docs
-just_the_docs:
-  color_scheme: dark # Menyesuaikan dengan gaya DevOps yang biasanya gelap
-
-permalink: /:title/
-repository: https://github.com/stunningtofu/stunningtofu.github.io
+  - jekyll-remote-theme

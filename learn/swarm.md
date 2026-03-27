@@ -1,8 +1,7 @@
 ---
-layout: default
-title: Docker Swarm
-parent: Learning Center
-nav_order: 2
+layout: learn
+title: Swarm Basic Commands
+permalink: /learn/swarm/
 ---
 
 # Docker Swarm Commands

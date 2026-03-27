@@ -1,8 +1,7 @@
 ---
-layout: default
-title: Kubernetes (kubectl)
-parent: Learning Center
-nav_order: 3
+layout: learn
+title: Kubectl base command
+permalink: /learn/kubetctl/
 ---
 
 # Kubectl Commands

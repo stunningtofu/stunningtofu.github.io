@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html lang="en" style="scroll-behavior: smooth;">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title | default: site.title }}</title>
     {% seo %}
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    
     <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: { 'dark-slate': '#343A40', 'deep-blue': '#0056B3' }
+                    colors: {
+                        'light-gray': '#F8F9FA',
+                        'dark-slate': '#343A40',
+                        'muted-gray': '#6C757D',
+                        'deep-blue': '#0056B3',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['"Fira Code"', 'monospace'],
+                    }
                 }
             }
         }
     </script>
 </head>
-<body class="antialiased">
+<body class="font-sans antialiased text-gray-800 selection:bg-deep-blue selection:text-white">
+
     {% include navbar.html %}
-    <main>{{ content }}</main>
+
+    <main>
+        {{ content }}
+    </main>
+
     {% include footer.html %}
 
     <script>
+        // Toggle Navigasi Mobile
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle && navMenu) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('hidden');
+            });
+        }
+
         // Smooth Scroll Logic
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) target.scrollIntoView({ behavior: 'smooth' });
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#') && targetId !== '#') {
+                    e.preventDefault();
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        // Tutup menu mobile setelah klik agar tidak menghalangi konten
+                        if(window.innerWidth < 640) {
+                            navMenu.classList.add('hidden');
+                        }
+                    }
+                }
             });
         });
-        // Mobile Toggle
-        const navToggle = document.getElementById('nav-toggle');
-        const navMenu = document.getElementById('nav-menu');
-        if (navToggle) {
-            navToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
-        }
     </script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: learn
 title: Docker Basics
 parent: Learning Center
 nav_order: 1

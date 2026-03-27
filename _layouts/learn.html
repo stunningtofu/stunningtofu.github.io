@@ -1,17 +1,19 @@
 ---
 layout: default
 ---
-<div style="position: relative; z-index: 100;">
+<div style="position: fixed; width: 100%; z-index: 1000; top: 0;">
     {% include navbar.html %}
 </div>
 
-<div class="docs-wrapper" style="padding-top: 70px;">
+<div style="padding-top: 64px;">
     {{ content }}
 </div>
 
 {% include footer.html %}
 
 <style>
-    .side-bar { top: 70px !important; }
-    .main-header { top: 70px !important; }
+    /* Penyesuaian agar sidebar tema tidak tertutup navbar fixed Anda */
+    .side-bar { top: 64px !important; height: calc(100vh - 64px) !important; }
+    .main-header { top: 64px !important; }
+    .main-content-wrap { padding-top: 80px !important; }
 </style>

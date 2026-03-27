@@ -1,8 +1,7 @@
 ---
 layout: learn
-title: Docker Basics
-parent: Learning Center
-nav_order: 1
+title: Docker Basic Commands
+permalink: /learn/docker/
 ---
 
 # Docker Basic Commands

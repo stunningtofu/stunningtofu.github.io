@@ -99,3 +99,10 @@ html {
   border-bottom: 1px solid #eee;
   padding-bottom: 10px;
 }
+
+/* Custom Docs Content Styling */
+.markdown-content h2 { @apply text-2xl font-semibold text-dark-slate mt-8 mb-4 border-b pb-2; }
+.markdown-content p { @apply my-4; }
+.markdown-content code { @apply bg-gray-100 px-1 py-0.5 rounded text-sm font-mono text-red-600; }
+.markdown-content pre { @apply bg-dark-slate text-white p-4 rounded-lg overflow-x-auto my-6; }
+.markdown-content ul { @apply list-disc ml-6 space-y-2; }

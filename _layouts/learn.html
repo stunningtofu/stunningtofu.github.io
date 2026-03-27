@@ -1,28 +1,52 @@
----
-layout: default
----
-<div class="fixed w-full z-[1000] top-0">
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | stunningtofu docs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/3/3.1.1/iconify.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'dark-slate': '#343A40', 'deep-blue': '#0056B3', 'light-gray': '#F8F9FA' }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body class="bg-white">
+
     {% include navbar.html %}
-</div>
 
-<div class="docs-main-container" style="margin-top: 64px;">
-    {{ content }}
-</div>
+    <div class="flex flex-col md:flex-row min-h-screen pt-20">
+        <aside class="w-full md:w-64 bg-light-gray border-r border-gray-200 p-6 sticky top-20 h-fit md:h-[calc(100vh-5rem)] overflow-y-auto">
+            <h3 class="text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">Documentation</h3>
+            <nav class="space-y-2">
+                <a href="{{ '/learn/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url == '/learn/' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Introduction</a>
+                <a href="{{ '/learn/docker/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'docker' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Docker Basics</a>
+                <a href="{{ '/learn/swarm/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'swarm' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Docker Swarm</a>
+                <a href="{{ '/learn/kubectl/' | relative_url }}" class="block px-3 py-2 rounded-md {% if page.url contains 'kubectl' %} bg-deep-blue text-white {% else %} text-gray-700 hover:bg-gray-200 {% endif %}">Kubectl</a>
+            </nav>
+        </aside>
 
-{% include footer.html %}
+        <article class="flex-1 p-8 md:p-12 max-w-4xl mx-auto prose prose-slate">
+            <h1 class="text-3xl font-bold text-dark-slate mb-6">{{ page.title }}</h1>
+            <div class="markdown-content text-gray-700 leading-relaxed">
+                {{ content }}
+            </div>
+        </article>
+    </div>
 
-<style>
-    /* Paksa Sidebar dan Header Tema turun ke bawah Navbar Anda */
-    .side-bar { 
-        top: 64px !important; 
-        height: calc(100vh - 64px) !important; 
-    }
-    .main-header { 
-        top: 64px !important; 
-        background-color: #111; /* Sesuaikan dengan tema dark Anda */
-    }
-    /* Mencegah konten tertutup footer jika kontennya sedikit */
-    .main-content-wrap {
-        min-height: calc(100vh - 200px);
-    }
-</style>
+    {% include footer.html %}
+
+    <script>
+        // Copy-paste logic smooth scroll & mobile menu dari home Anda
+        const navToggle = document.getElementById('nav-toggle');
+        const navMenu = document.getElementById('nav-menu');
+        if (navToggle) navToggle.addEventListener('click', () => navMenu.classList.toggle('hidden'));
+    </script>
+</body>
+</html>

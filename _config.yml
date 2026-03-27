@@ -2,14 +2,7 @@ title: stunningtofu docs
 url: "https://stunningtofu.github.io"
 baseurl: ""
 
-remote_theme: just-the-docs/just-the-docs
-
+# Hapus remote_theme: just-the-docs
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-remote-theme
-
-just_the_docs:
-  color_scheme: dark
-  search_enabled: true
-  logo: "/" # Link logo ke Home utama

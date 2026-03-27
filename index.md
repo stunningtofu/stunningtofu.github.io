@@ -165,18 +165,6 @@ title: Welcome to stunningtofu
                     <p class="text-muted-gray text-sm leading-relaxed">Performance tuning for web servers (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">Nginx/Apache</span>), SSL provisioning, database optimization (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">MySQL/MariaDB</span>), and caching.</p>
                 </div>
             </article>
-
-            <article class="service-card h-[320px] sm:h-[300px] rounded-xl bg-white shadow-sm hover:shadow-xl border border-gray-100">
-                <div class="service-front absolute inset-0 flex flex-col items-center justify-center p-6 text-center bg-white z-10">
-                    <span class="iconify text-deep-blue text-[72px] mb-4" data-icon="mdi:cloud-network"></span>
-                    <h3 class="text-xl font-bold text-dark-slate">Cloud Ecosystem Integration</h3>
-                </div>
-                <div class="service-back absolute inset-0 bg-white p-6 sm:p-8 flex flex-col justify-start sm:justify-center z-20 border-t-4 border-deep-blue">
-                    <h3 class="text-lg sm:text-xl font-bold text-dark-slate mb-3 border-b-2 border-deep-blue pb-2 self-start">Cloud Ecosystem Integration</h3>
-                    <p class="text-muted-gray text-sm leading-relaxed">Implementing cloud architecture best practices. Specializing in secure <span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">VPC</span> networking, Access Management (<span class="font-mono bg-gray-100 text-deep-blue px-1.5 py-0.5 rounded text-xs border border-gray-200 font-medium">IAM/SSO</span>), and workload isolation.</p>
-                </div>
-            </article>
-
         </div>
     </div>
 </main>
